@@ -1,0 +1,404 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style3.css">
+</head>
+<style>
+    .become-driver {
+        padding: 50px 0;
+        background: linear-gradient(to right, #fff8f2, #ffeade);
+    }
+
+    .become-driver .container {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 40px;
+    }
+
+    .become-driver .left {
+        flex: 1;
+        text-align: center;
+    }
+
+    .become-driver .driver-img {
+        max-width: 100%;
+        height: auto;
+    }
+
+    .become-driver .right {
+        flex: 1;
+    }
+
+    .become-driver h2 {
+        font-size: 36px;
+        margin-bottom: 20px;
+        font-weight: 700;
+    }
+
+    .become-driver h2 span {
+        color: #f37021;
+    }
+
+    .become-driver p {
+        font-size: 16px;
+        line-height: 1.6;
+        color: #555;
+    }
+
+    .buttons {
+        margin-top: 20px;
+        display: flex;
+        align-items: center;
+        gap: 10px;
+    }
+
+    .btn-orange {
+        background-color: #f37021;
+        color: #fff;
+        padding: 10px 20px;
+        border-radius: 6px;
+        text-decoration: none;
+        font-weight: bold;
+    }
+    
+/* Hero section */
+.hero {
+  width: 100%;
+  overflow: hidden;
+}
+
+.hero img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+/* Intro section */
+.service-intro {
+  background: linear-gradient(to bottom, #fdeee9, #fff);
+  padding: 40px 20px;
+  text-align: center;
+}
+
+.service-intro .container {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.service-intro .small-title {
+  font-size: 14px;
+  color: #f05a28;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  margin-bottom: 8px;
+}
+
+.service-intro h2 {
+  font-size: 28px;
+  margin-bottom: 20px;
+}
+
+.service-intro h2 span {
+  color: #f05a28;
+}
+
+.service-intro p {
+  font-size: 16px;
+  line-height: 1.6;
+  margin-bottom: 16px;
+}
+
+@media (max-width: 768px) {
+  .service-intro h2 {
+    font-size: 22px;
+  }
+  .service-intro p {
+    font-size: 14px;
+  }
+}
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.inspection-section {
+  display: flex;
+  justify-content: center;
+  padding: 40px 20px;
+}
+
+.inspection-card {
+  display: flex;
+  flex-direction: row; /* để ngang */
+  flex-wrap: wrap;
+  background: #f26d21;
+  border-radius: 20px;
+  overflow: hidden;
+  max-width: 1100px;
+  color: #fff;
+}
+
+.text-content {
+  flex: 1 1 55%;
+  padding: 40px;
+  box-sizing: border-box;
+}
+
+.text-content h2 {
+  font-size: 28px;
+  margin-bottom: 30px;
+}
+
+.step {
+  display: flex;
+  align-items: flex-start;
+  margin-bottom: 20px;
+}
+
+.arrow {
+  font-size: 22px;
+  margin-right: 10px;
+}
+
+.step h3 {
+  font-size: 18px;
+  margin: 0 0 6px;
+}
+
+.step p {
+  font-size: 15px;
+  line-height: 1.5;
+  margin: 0;
+}
+
+.image-content {
+  flex: 1 1 45%;
+}
+
+.image-content img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .inspection-card {
+    flex-direction: column;
+  }
+}
+</style>
+
+<body>
+    <header>
+        <img src="img/Isolation_Mode.png" alt="BUTL Logo">
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="about.html">About BUTL</a>
+            <a href="YouDrinkIdrive.html">You Drink I Drive</a>
+            <div class="dropdown">
+                <a href="HireaDriver.html" id="dropdownToggle">Hire a driver ▼</a>
+                <div class="dropdown-menu" id="dropdownMenu">
+                    <a href="motobike drive.html">Motorbike driver</a>
+                    <a href="car driver.html">Car driver</a>
+                    <a href="driver-to-province.html">Driver to province</a>
+                </div>
+            </div>
+            <div class="dropdown">
+                <a href="Services.html" class="dropdown-toggle">Affiliate Services ▼</a>
+                <div class="dropdown-menu">
+                    <a href="Registration for household.html">Registration for household</a>
+                    <a href="Parking lot link.html">Parking lot link</a>
+                    <a href="Motorcycle Rescue.html">24/7 Motorcycle Rescue</a>
+                    <a href="Car Rescue.html">24/7 Car Rescue</a>
+                </div>
+            </div>
+            <a href="Contact.html">Contact</a>
+        </nav>
+        <a class="btn-download" href="#">DOWNLOAD THE APP NOW</a>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <img src="img/abcc.png" alt="">
+    </section>
+
+    <!-- Content Section -->
+    <section class="service-intro">
+        <div class="container">
+            <p class="small-title">Introduce</p>
+            <h2> Registration for<span>household</span></h2>
+            <p>
+                Taking your car for regular inspections is often time-consuming and laborious, especially when you are
+                busy or unfamiliar with the complex process. Therefore, BUTL provides inspection services, helping
+                customers save time and eliminate all worries about administrative procedures. Vehicle inspection is not
+                difficult, BUTL takes care of it!
+            </p>
+        </div>
+    </section>
+    
+<section class="inspection-section">
+  <div class="inspection-card">
+    <div class="text-content">
+      <h2>Vehicle inspection process at BUTL</h2>
+
+      <div class="step">
+        <span class="arrow">→</span>
+        <div>
+          <h3>Book service via BUTL app</h3>
+          <p>You schedule an inspection via the BUTL app by providing vehicle information and desired time.</p>
+        </div>
+      </div>
+
+      <div class="step">
+        <span class="arrow">→</span>
+        <div>
+          <h3>Pick up at your door</h3>
+          <p>BUTL team will come to pick up the vehicle and conduct inspection, process all necessary documents before taking the vehicle to the inspection center.</p>
+        </div>
+      </div>
+
+      <div class="step">
+        <span class="arrow">→</span>
+        <div>
+          <h3>Vehicle inspection</h3>
+          <p>Your vehicle will be taken to a reputable inspection center, BUTL will conduct the entire inspection process, ensuring the vehicle meets the standards required by law.</p>
+        </div>
+      </div>
+
+      <div class="step">
+        <span class="arrow">→</span>
+        <div>
+          <h3>Return the car</h3>
+          <p>After the inspection is completed, the vehicle will be returned to you, along with complete inspection certificates.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="image-content">
+      <img src="img/11.png" alt="Vehicle Inspection">
+    </div>
+  </div>
+</section>
+
+    <section class="become-driver">
+        <div class="container">
+            <div class="left">
+                <img src="img/THU-NHAO-CAO.png" alt="BUTL Driver" class="driver-img">
+            </div>
+            <div class="right">
+                <h2>Become a <span>BUTL</span> driver</h2>
+                <p>
+                    BUTL always welcomes drivers to join the professional driver community,
+                    pioneering in providing safe, reputable and convenient services to customers.
+                    Join BUTL to spread the spirit of safe traffic participation and enjoy attractive benefits!
+                </p>
+                <div class="buttons">
+                    <a href="#" class="btn-orange">Sign up now</a>
+                    <span>Or</span>
+                    <a href="tel:19009235" class="contact">Contact: <strong>1900 9235</strong></a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-about">
+                <img src="img/Isolation_Mode(1).png" alt="BUTL Logo" class="footer-logo">
+                <p><strong>YOU DRINK, I DRIVE SERVICE JOINT STOCK COMPANY</strong></p>
+                <p>Address: No. 24 DN7 Street, Tan Hung Thuan Ward, District 12, HCMC</p>
+                <p>Tax code: 0314377271</p>
+                <p>Hotline: 1900 9235 - 0908 08 4499</p>
+                <p>Email: info@banuongtoilai.vn</p>
+            </div>
+
+            <div class="footer-links">
+                <h4>ABOUT BUTL</h4>
+                <ul>
+                    <li><a href="#">Introduce</a></li>
+                    <li><a href="#">Registration Instructions</a></li>
+                    <li><a href="#">Terms of Service</a></li>
+                    <li><a href="#">Privacy Policy</a></li>
+                    <li><a href="#">Recruitment of Driver Partners</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-services">
+                <h4>BUTL SERVICES</h4>
+                <ul>
+                    <li><a href="#">You Drink I Drive</a></li>
+                    <li><a href="#">Rent a Car Driver</a></li>
+                    <li><a href="#">Rent a Motorbike Driver</a></li>
+                    <li><a href="#">Vehicle Registration Service</a></li>
+                </ul>
+                <h4>DOWNLOAD BUTL APP</h4>
+                <div class="app-links">
+                    <img src="img/Google_Play.svg" alt="Google Play">
+                    <img src="img/App_Store.svg" alt="App Store">
+                </div>
+                <div class="social-icons">
+                    <a href="#"><img src="img/fb.webp" alt="Facebook"></a>
+                    <a href="#"><img src="img/intergram.webp" alt="Instagram"></a>
+                    <a href="#"><img src="img/tiktok.webp" alt="TikTok"></a>
+                    <a href="#"><img src="img/youtube.webp" alt="YouTube"></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script>
+        document.getElementById("dropdownToggle").addEventListener("click", function (e) {
+            e.preventDefault();
+            document.getElementById("dropdownMenu").classList.toggle("show");
+        });
+
+        // Click ra ngoài thì đóng menu
+        document.addEventListener("click", function (e) {
+            const menu = document.getElementById("dropdownMenu");
+            const toggle = document.getElementById("dropdownToggle");
+            if (!toggle.contains(e.target) && !menu.contains(e.target)) {
+                menu.classList.remove("show");
+            }
+        });
+    </script>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            document.querySelectorAll(".dropdown-toggle").forEach(toggle => {
+                toggle.addEventListener("click", function (e) {
+                    e.preventDefault();
+
+                    // Đóng tất cả menu khác
+                    document.querySelectorAll(".dropdown-menu").forEach(menu => {
+                        if (menu !== this.nextElementSibling) {
+                            menu.classList.remove("show");
+                        }
+                    });
+
+                    // Toggle menu hiện tại
+                    this.nextElementSibling.classList.toggle("show");
+                });
+            });
+
+            // Đóng menu khi click ra ngoài
+            document.addEventListener("click", function (e) {
+                document.querySelectorAll(".dropdown").forEach(drop => {
+                    if (!drop.contains(e.target)) {
+                        drop.querySelector(".dropdown-menu").classList.remove("show");
+                    }
+                });
+            });
+        });
+    </script>
+
+</body>
+
+</html>

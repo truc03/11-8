@@ -1,0 +1,401 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style3.css">
+</head>
+<style>
+    body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  color: #333;
+}
+
+/* Booking section */
+.booking-section {
+    padding: 50px 10%;
+}
+
+.booking-container {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+}
+
+.phone-image img {
+    max-width: 250px;
+}
+
+.booking-steps h2 {
+    font-size: 24px;
+}
+
+.booking-steps span {
+    color: #ff6600;
+}
+
+.step {
+    display: flex;
+    align-items: center;
+    margin: 10px 0;
+}
+
+.step-number {
+    background: #ff6600;
+    color: #fff;
+    width: 25px;
+    height: 25px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+.btn {
+    background: #ff6600;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    margin-top: 20px;
+    border-radius: 5px;
+}
+
+/* Commitment section */
+.commitment-section {
+    padding: 50px 10%;
+}
+
+.commitment-container {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+}
+
+.commitment-text h2 span {
+    color: #ff6600;
+}
+
+.commitment-images {
+    display: flex;
+    gap: 15px;
+}
+
+.commitment-images img {
+    max-width: 350px;
+    border-radius: 10px;
+}
+.become-driver {
+  padding: 50px 0;
+  background: linear-gradient(to right, #fff8f2, #ffeade);
+}
+
+.become-driver .container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 40px;
+}
+
+.become-driver .left {
+  flex: 1;
+  text-align: center;
+}
+
+.become-driver .driver-img {
+  max-width: 100%;
+  height: auto;
+}
+
+.become-driver .right {
+  flex: 1;
+}
+
+.become-driver h2 {
+  font-size: 36px;
+  margin-bottom: 20px;
+  font-weight: 700;
+}
+
+.become-driver h2 span {
+  color: #f37021;
+}
+
+.become-driver p {
+  font-size: 16px;
+  line-height: 1.6;
+  color: #555;
+}
+
+.buttons {
+  margin-top: 20px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.btn-orange {
+  background-color: #f37021;
+  color: #fff;
+  padding: 10px 20px;
+  border-radius: 6px;
+  text-decoration: none;
+  font-weight: bold;
+}
+/* Hero section */
+.hero {
+  width: 100%;
+  overflow: hidden;
+}
+
+.hero img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+/* Intro section */
+.service-intro {
+  background: linear-gradient(to bottom, #fdeee9, #fff);
+  padding: 40px 20px;
+  text-align: center;
+}
+
+.service-intro .container {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.service-intro .small-title {
+  font-size: 14px;
+  color: #f05a28;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  margin-bottom: 8px;
+}
+
+.service-intro h2 {
+  font-size: 28px;
+  margin-bottom: 20px;
+}
+
+.service-intro h2 span {
+  color: #f05a28;
+}
+
+.service-intro p {
+  font-size: 16px;
+  line-height: 1.6;
+  margin-bottom: 16px;
+}
+
+@media (max-width: 768px) {
+  .service-intro h2 {
+    font-size: 22px;
+  }
+  .service-intro p {
+    font-size: 14px;
+  }
+}
+
+</style>
+<body>
+     <header>
+        <img src="img/Isolation_Mode.png" alt="BUTL Logo">
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="about.html">About BUTL</a>
+            <a href="YouDrinkIdrive.html">You Drink I Drive</a>
+                 <div class="dropdown">
+            <a href="HireaDriver.html" id="dropdownToggle">Hire a driver ▼</a>
+            <div class="dropdown-menu" id="dropdownMenu">
+                <a href="motobike drive.html">Motorbike driver</a>
+                <a href="car driver.html">Car driver</a>
+                <a href="driver-to-province.html">Driver to province</a>
+            </div>
+        </div>
+          <div class="dropdown">
+            <a href="Services.html" class="dropdown-toggle">Affiliate Services ▼</a>
+            <div class="dropdown-menu">
+                <a href="Registration for household.html">Registration for household</a>
+                <a href="Parking lot link.html">Parking lot link</a>
+                <a href="Motorcycle Rescue.html">24/7 Motorcycle Rescue</a>
+                <a href="Car Rescue.html">24/7 Car Rescue</a>
+            </div>
+        </div>
+            <a href="Contact.html">Contact</a>
+        </nav>
+        <a class="btn-download" href="#">DOWNLOAD THE APP NOW</a>
+    </header>
+
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <img src="img/abx.png" alt="Motorcycle Driver Service">
+  </section>
+
+  <!-- Content Section -->
+  <section class="service-intro">
+    <div class="container">
+      <p class="small-title">Introduce</p>
+      <h2>Motorcycle Driver <span>Service</span></h2>
+      <p>
+        BUTL's motorbike rental service is the perfect solution for those who need to move quickly and safely around the city but cannot 
+        or do not want to drive themselves. This service is especially useful when you have consumed alcohol and cannot drive yourself home.
+      </p>
+      <p>
+        With a team of professional, friendly and knowledgeable motorbike drivers, BUTL helps you get to your destination quickly but still 
+        ensures safety. Whether you need to go to work, go to school, attend an important appointment, or simply go home after a fun party, 
+        BUTL is always ready to serve you.
+      </p>
+    </div>
+  </section>
+
+
+<section class="booking-section">
+        <div class="booking-container">
+            <div class="phone-image">
+                <img src="img/TUTORIAL-MB-2.gif" alt="BUTL App">
+            </div>
+            <div class="booking-steps">
+                <h2>Book a <span>Motorbike</span> driver by:</h2>
+                <div class="step"><span class="step-number">1</span> <strong>Step 1:</strong> Enter Pickup Point/Destination</div>
+                <div class="step"><span class="step-number">2</span> <strong>Step 2:</strong> Select service <a href="#">Car Driver/Motorbike Driver/Provincial Driver</a></div>
+                <div class="step"><span class="step-number">3</span> <strong>Step 3:</strong> Select payment method</div>
+                <div class="step"><span class="step-number">4</span> <strong>Step 4:</strong> Enter promo code (if any)</div>
+                <div class="step"><span class="step-number">5</span> <strong>Step 5:</strong> Select <a href="#">Book a ride</a> and let BUTL find the nearest driver for you</div>
+                <button class="btn">Book a driver now</button>
+            </div>
+        </div>
+    </section>
+
+    <section class="commitment-section">
+        <div class="commitment-container">
+            <div class="commitment-text">
+                <h2>Commitment to <span>service quality</span></h2>
+                <p>Community mission: With the motto “Your Safety Is Our Happiness”, BUTL has purchased a professional liability insurance package specifically for BUTL’s services.</p>
+                <p>Driver team: With a team of experienced drivers who are carefully selected and trained, BUTL always wants vehicle owners to be comfortable, safe and relaxed on every trip.</p>
+                <p>No worries about price: The price of the trip is displayed right on the BUTL app (including promotional/discount prices). Just pay the exact amount and enjoy the trip.</p>
+            </div>
+            <div class="commitment-images">
+                <img src="img/1.png" alt="Driver 1">
+               
+            </div>
+        </div>
+    </section>
+<section class="become-driver">
+  <div class="container">
+    <div class="left">
+      <img src="img/THU-NHAO-CAO.png" alt="BUTL Driver" class="driver-img">
+    </div>
+    <div class="right">
+      <h2>Become a <span>BUTL</span> driver</h2>
+      <p>
+        BUTL always welcomes drivers to join the professional driver community,
+        pioneering in providing safe, reputable and convenient services to customers.
+        Join BUTL to spread the spirit of safe traffic participation and enjoy attractive benefits!
+      </p>
+      <div class="buttons">
+        <a href="#" class="btn-orange">Sign up now</a>
+        <span>Or</span>
+        <a href="tel:19009235" class="contact">Contact: <strong>1900 9235</strong></a>
+      </div>
+    </div>
+  </div>
+</section>
+       <!-- Footer -->
+<footer class="footer">
+    <div class="footer-container">
+        <div class="footer-about">
+            <img src="img/Isolation_Mode(1).png" alt="BUTL Logo" class="footer-logo">
+            <p><strong>YOU DRINK, I DRIVE SERVICE JOINT STOCK COMPANY</strong></p>
+            <p>Address: No. 24 DN7 Street, Tan Hung Thuan Ward, District 12, HCMC</p>
+            <p>Tax code: 0314377271</p>
+            <p>Hotline: 1900 9235 - 0908 08 4499</p>
+            <p>Email: info@banuongtoilai.vn</p>
+        </div>
+
+        <div class="footer-links">
+            <h4>ABOUT BUTL</h4>
+            <ul>
+                <li><a href="#">Introduce</a></li>
+                <li><a href="#">Registration Instructions</a></li>
+                <li><a href="#">Terms of Service</a></li>
+                <li><a href="#">Privacy Policy</a></li>
+                <li><a href="#">Recruitment of Driver Partners</a></li>
+            </ul>
+        </div>
+
+        <div class="footer-services">
+            <h4>BUTL SERVICES</h4>
+            <ul>
+                <li><a href="#">You Drink I Drive</a></li>
+                <li><a href="#">Rent a Car Driver</a></li>
+                <li><a href="#">Rent a Motorbike Driver</a></li>
+                <li><a href="#">Vehicle Registration Service</a></li>
+            </ul>
+            <h4>DOWNLOAD BUTL APP</h4>
+            <div class="app-links">
+                <img src="img/Google_Play.svg" alt="Google Play">
+                <img src="img/App_Store.svg" alt="App Store">
+            </div>
+            <div class="social-icons">
+                <a href="#"><img src="img/fb.webp" alt="Facebook"></a>
+                <a href="#"><img src="img/intergram.webp" alt="Instagram"></a>
+                <a href="#"><img src="img/tiktok.webp" alt="TikTok"></a>
+                <a href="#"><img src="img/youtube.webp" alt="YouTube"></a>
+            </div>
+        </div>
+    </div>
+</footer>
+    <script>
+document.getElementById("dropdownToggle").addEventListener("click", function(e) {
+    e.preventDefault();
+    document.getElementById("dropdownMenu").classList.toggle("show");
+});
+
+// Click ra ngoài thì đóng menu
+document.addEventListener("click", function(e) {
+    const menu = document.getElementById("dropdownMenu");
+    const toggle = document.getElementById("dropdownToggle");
+    if (!toggle.contains(e.target) && !menu.contains(e.target)) {
+        menu.classList.remove("show");
+    }
+});
+</script>
+
+<script>
+document.addEventListener("DOMContentLoaded", function() {
+    document.querySelectorAll(".dropdown-toggle").forEach(toggle => {
+        toggle.addEventListener("click", function(e) {
+            e.preventDefault();
+
+            // Đóng tất cả menu khác
+            document.querySelectorAll(".dropdown-menu").forEach(menu => {
+                if (menu !== this.nextElementSibling) {
+                    menu.classList.remove("show");
+                }
+            });
+
+            // Toggle menu hiện tại
+            this.nextElementSibling.classList.toggle("show");
+        });
+    });
+
+    // Đóng menu khi click ra ngoài
+    document.addEventListener("click", function(e) {
+        document.querySelectorAll(".dropdown").forEach(drop => {
+            if (!drop.contains(e.target)) {
+                drop.querySelector(".dropdown-menu").classList.remove("show");
+            }
+        });
+    });
+});
+</script>
+
+</body>
+</html>

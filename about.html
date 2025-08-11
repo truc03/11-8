@@ -1,0 +1,667 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style3.css">
+    <title>Document</title>
+</head>
+<style>
+    /* ===== About Section ===== */
+.about-section {
+    background: linear-gradient(180deg, #fff5ed, #ffffff);
+    padding: 50px 20px;
+}
+
+.about-container {
+    display: flex;
+    gap: 30px;
+    align-items: center;
+    max-width: 1200px;
+    margin: auto;
+}
+
+.about-media {
+    position: relative;
+    flex: 1;
+}
+
+.about-media img {
+    width: 100%;
+    border-radius: 10px;
+    display: block;
+}
+
+.play-button {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: white;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 24px;
+    color: orange;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+    cursor: pointer;
+}
+
+.about-text {
+    flex: 1;
+    background: #f97316;
+    color: white;
+    padding: 30px;
+    border-radius: 10px;
+}
+
+.about-text h2 {
+    margin-bottom: 15px;
+}
+
+.about-text p {
+    margin-bottom: 10px;
+    line-height: 1.6;
+}
+
+/* ===== Vision & Mission ===== */
+.vision-mission {
+    padding: 50px 20px;
+    text-align: center;
+    background: linear-gradient(180deg, #fff, #fff6ef);
+}
+
+.vision-mission h2 {
+    font-size: 28px;
+    margin-bottom: 40px;
+}
+
+.highlight {
+    color: orange;
+}
+
+.vm-cards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    max-width: 1200px;
+    margin: auto;
+}
+
+.vm-card {
+    background: white;
+    padding: 30px 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease;
+}
+
+.vm-card img {
+    width: 50px;
+    margin-bottom: 15px;
+}
+
+.vm-card h3 {
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.vm-card p {
+    font-size: 14px;
+    color: #555;
+}
+
+.vm-card:hover {
+    transform: translateY(-5px);
+}
+
+/* ===== Responsive ===== */
+@media (max-width: 992px) {
+    .about-container {
+        flex-direction: column;
+    }
+    .vm-cards {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 600px) {
+    .vm-cards {
+        grid-template-columns: 1fr;
+    }
+}
+/* ===== Top Goals ===== */
+.top-goals {
+    background: linear-gradient(180deg, #fff, #ffefe3);
+    padding: 50px 20px;
+}
+
+.top-goals-content {
+    display: flex;
+    max-width: 1200px;
+    margin: auto;
+    gap: 40px;
+    align-items: center;
+}
+
+.goals-text {
+    flex: 1;
+    background: #f97316;
+    color: white;
+    padding: 30px;
+    border-radius: 10px;
+}
+
+.goals-text h2 {
+    margin-bottom: 20px;
+}
+
+.goal-item {
+    display: flex;
+    gap: 15px;
+    margin-bottom: 20px;
+}
+
+.goal-item img {
+    width: 40px;
+    height: 40px;
+}
+
+.goal-item h3 {
+    margin: 0 0 5px;
+}
+
+.goal-item p {
+    font-size: 14px;
+    line-height: 1.5;
+}
+
+.goals-image img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+/* ===== Development Journey ===== */
+.dev-journey {
+    padding: 50px 20px;
+    background: white;
+    text-align: center;
+}
+
+.dev-journey h2 {
+    font-size: 28px;
+    margin-bottom: 20px;
+}
+
+.orange {
+    color: #f97316;
+}
+
+.stats {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    margin-bottom: 40px;
+}
+
+.stats strong {
+    font-size: 22px;
+    color: #f97316;
+}
+
+.timeline {
+    position: relative;
+    max-width: 900px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 30px;
+}
+
+.timeline::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 0;
+    right: 0;
+    height: 3px;
+    background: #ddd;
+    z-index: 1;
+}
+
+.timeline-item {
+    position: relative;
+    background: #fff;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    z-index: 2;
+}
+
+.year {
+    display: inline-block;
+    background: #f97316;
+    color: white;
+    padding: 5px 12px;
+    border-radius: 5px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+/* ===== Responsive ===== */
+@media (max-width: 992px) {
+    .top-goals-content {
+        flex-direction: column;
+    }
+    .stats {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .timeline {
+        grid-template-columns: 1fr;
+    }
+}
+/* ===== Corporate Culture ===== */
+.corporate-culture {
+    background: white;
+    padding: 60px 20px;
+}
+
+.culture-container {
+    display: flex;
+    align-items: center;
+    max-width: 1200px;
+    margin: auto;
+    gap: 50px;
+}
+
+.culture-text {
+    flex: 1;
+}
+
+.culture-text h2 {
+    font-size: 32px;
+    margin-bottom: 20px;
+}
+
+.highlight {
+    color: #f97316;
+    font-weight: bold;
+}
+
+.culture-text p {
+    margin-bottom: 15px;
+    line-height: 1.6;
+    color: #333;
+}
+
+.culture-images {
+    flex: 1;
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+}
+
+.image-wrapper {
+    position: relative;
+}
+
+.image-wrapper img {
+    width: 200px;
+    border-radius: 15px;
+    box-shadow: 0 6px 15px rgba(0,0,0,0.1);
+}
+
+.circle-lines {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 180px;
+    height: 180px;
+    border-radius: 50%;
+    border: 1px dashed rgba(249, 115, 22, 0.5);
+    transform: translate(-50%, -50%);
+    z-index: -1;
+}
+
+/* ===== Partners ===== */
+.butl-partners {
+    background: white;
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.butl-partners h2 {
+    font-size: 28px;
+    margin-bottom: 30px;
+}
+
+.orange {
+    color: #f97316;
+}
+
+.partners-logos {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    justify-content: center;
+    align-items: center;
+}
+
+.partners-logos img {
+    height: 40px;
+    object-fit: contain;
+}
+
+/* ===== Responsive ===== */
+@media (max-width: 992px) {
+    .culture-container {
+        flex-direction: column;
+        text-align: center;
+    }
+    .culture-images {
+        flex-direction: column;
+    }
+}
+
+
+</style>
+<body>
+    <header>
+        <img src="img/Isolation_Mode.png" alt="BUTL Logo">
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="about.html">About BUTL</a>
+            <a href="YouDrinkIdrive.html">You Drink I Drive</a>
+                 <div class="dropdown">
+            <a href="HireaDriver.html" id="dropdownToggle">Hire a driver ▼</a>
+            <div class="dropdown-menu" id="dropdownMenu">
+                <a href="motobike drive.html">Motorbike driver</a>
+                <a href="car driver.html">Car driver</a>
+                <a href="driver-to-province.html">Driver to province</a>
+            </div>
+        </div>
+             <div class="dropdown">
+            <a href="Services.html" class="dropdown-toggle">Affiliate Services ▼</a>
+            <div class="dropdown-menu">
+                <a href="Registration for household.html">Registration for household</a>
+                <a href="Parking lot link.html">Parking lot link</a>
+                <a href="Motorcycle Rescue.html">24/7 Motorcycle Rescue</a>
+                <a href="Car Rescue.html">24/7 Car Rescue</a>
+            </div>
+        </div>
+            <a href="Contact.html">Contact</a>
+        </nav>
+        <a class="btn-download" href="#">DOWNLOAD THE APP NOW</a>
+    </header>
+<!-- About BUTL -->
+<section class="about-section">
+    <div class="about-container">
+        <!-- Left: Video/Image -->
+        <div class="about-media">
+            <img src="img/image.png" alt="About BUTL">
+            <div class="play-button">
+                <span>▶</span>
+            </div>
+        </div>
+
+        <!-- Right: Text -->
+        <div class="about-text">
+            <h2>About BUTL</h2>
+            <p>
+                On April 26, 2017, BUTL – You Drink, I Drive was officially launched, the pioneering application in Vietnam providing driving services to “take drunk people home”.
+            </p>
+            <p>
+                BUTL provides the optimal solution for users by finding drivers to take drunk people home safely in their own cars, especially customers who often have to entertain guests, drink a lot of alcohol and are not convenient to leave their cars in strange places. BUTL not only helps you enjoy the fun to the fullest but also ensures safety for every journey.
+            </p>
+            <p>
+                BUTL always strives and constantly develops to bring the most intelligent, convenient and reliable mobility solutions to users.
+            </p>
+        </div>
+    </div>
+</section>
+
+<!-- Vision & Mission -->
+<section class="vision-mission">
+    <h2><span class="highlight">Vision</span> and Mission</h2>
+
+    <div class="vm-cards">
+        <div class="vm-card">
+            <img src="img/values.webp" alt="Core Values">
+            <h3>Core Values</h3>
+            <p>"Connecting needs – Sharing values"</p>
+        </div>
+
+        <div class="vm-card">
+            <img src="img/vision.webp" alt="Vision">
+            <h3>Vision</h3>
+            <p>Become the leading safe and convenient transportation service ecosystem in Vietnam, integrating a variety of solutions to meet travel, parking, and vehicle maintenance needs.</p>
+        </div>
+
+        <div class="vm-card">
+            <img src="img/mission.webp" alt="Mission">
+            <h3>Mission</h3>
+            <p>Bring safety, convenience, and superior experiences to customers, while creating sustainable value for the community and shareholders.</p>
+        </div>
+    </div>
+</section>
+<!-- Top Goals -->
+<section class="top-goals">
+    <div class="top-goals-content">
+        <!-- Left: Text -->
+        <div class="goals-text">
+            <h2>Top Goals</h2>
+
+            <div class="goal-item">
+                <img src="icon-safety.png" alt="Safety">
+                <div>
+                    <h3>Safety, quality</h3>
+                    <p>BUTL’s top priority is to ensure the safety of customers and the community with professional, convenient and reliable service.</p>
+                </div>
+            </div>
+
+            <div class="goal-item">
+                <img src="icon-responsibility.png" alt="Responsibility">
+                <div>
+                    <h3>Responsibility</h3>
+                    <p>Contribute to building a responsible traffic culture and raising social awareness of safety after drinking alcohol.</p>
+                </div>
+            </div>
+
+            <div class="goal-item">
+                <img src="icon-conscientious.png" alt="Conscientious">
+                <div>
+                    <h3>Conscientious</h3>
+                    <p>Continuously improve technology and services, while listening, understanding and accompanying customers on every journey.</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Right: Image -->
+        <div class="goals-image">
+            <img src="goals-image.png" alt="BUTL Driver">
+        </div>
+    </div>
+</section>
+
+<!-- Development Journey -->
+<section class="dev-journey">
+    <h2><span class="orange">Development</span> Journey</h2>
+    <div class="stats">
+        <div>
+            <strong>400,000+</strong>
+            <p>User</p>
+        </div>
+        <div>
+            <strong>4,000+</strong>
+            <p>Driver</p>
+        </div>
+        <div>
+            <strong>1,000,000+</strong>
+            <p>Successful trip</p>
+        </div>
+        <div>
+            <strong>1,200+</strong>
+            <p>Restaurant service partner</p>
+        </div>
+    </div>
+
+    <div class="timeline">
+        <div class="timeline-item">
+            <span class="year">2016</span>
+            <p>The project “Bringing drunk people home” was born</p>
+        </div>
+        <div class="timeline-item">
+            <span class="year">2017</span>
+            <p>BUTL – You Drink, I Drive – Driver Hiring Platform Officially Launched</p>
+        </div>
+        <div class="timeline-item">
+            <span class="year">2020</span>
+            <p>In just 3 years, BUTL has received over 10,000 downloads, generating income for over 1,000 workers who have signed up as drivers.</p>
+        </div>
+        <div class="timeline-item">
+            <span class="year">2023</span>
+            <p>Bship formed. Early 2024 buy more than 3000 cars</p>
+        </div>
+    </div>
+</section>
+<!-- Corporate Culture -->
+<section class="corporate-culture">
+    <div class="culture-container">
+        <!-- Left Text -->
+        <div class="culture-text">
+            <h2><span class="highlight">Corporate</span> culture</h2>
+            <p>
+                At BUTL, we build a working environment based on mutual respect and support, 
+                where everyone is encouraged to contribute ideas and develop themselves.
+            </p>
+            <p>
+                With a constant effort to innovate and develop, we believe that success lies not only 
+                in providing safe services but also in creating a culture of responsibility to the community.
+            </p>
+            <p>
+                The spirit of creativity, innovation and dedication is the foundation for our sustainable development.
+            </p>
+        </div>
+
+        <!-- Right Images -->
+        <div class="culture-images">
+            <div class="image-wrapper">
+                <img src="driver1.png" alt="BUTL Driver">
+                <div class="circle-lines"></div>
+            </div>
+            <div class="image-wrapper">
+                <img src="driver2.png" alt="BUTL Driver">
+                <div class="circle-lines"></div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- BUTL Partners -->
+<section class="butl-partners">
+    <h2><span class="orange">BUTL</span> Partners</h2>
+    <div class="partners-logos">
+        <img src="visa.png" alt="VISA">
+        <img src="vnpay.png" alt="VNPay">
+        <img src="fpt.png" alt="FPT">
+        <img src="voh.png" alt="VOH">
+        <img src="tuoitre.png" alt="Tuổi Trẻ">
+        <img src="mastercard.png" alt="Mastercard">
+        <img src="thanhnien.png" alt="Thanh Niên">
+    </div>
+</section>
+
+    <footer class="footer">
+    <div class="footer-container">
+        <div class="footer-about">
+            <img src="img/Isolation_Mode(1).png" alt="BUTL Logo" class="footer-logo">
+            <p><strong>YOU DRINK, I DRIVE SERVICE JOINT STOCK COMPANY</strong></p>
+            <p>Address: No. 24 DN7 Street, Tan Hung Thuan Ward, District 12, HCMC</p>
+            <p>Tax code: 0314377271</p>
+            <p>Hotline: 1900 9235 - 0908 08 4499</p>
+            <p>Email: info@banuongtoilai.vn</p>
+        </div>
+
+        <div class="footer-links">
+            <h4>ABOUT BUTL</h4>
+            <ul>
+                <li><a href="#">Introduce</a></li>
+                <li><a href="#">Registration Instructions</a></li>
+                <li><a href="#">Terms of Service</a></li>
+                <li><a href="#">Privacy Policy</a></li>
+                <li><a href="#">Recruitment of Driver Partners</a></li>
+            </ul>
+        </div>
+
+        <div class="footer-services">
+            <h4>BUTL SERVICES</h4>
+            <ul>
+                <li><a href="#">You Drink I Drive</a></li>
+                <li><a href="#">Rent a Car Driver</a></li>
+                <li><a href="#">Rent a Motorbike Driver</a></li>
+                <li><a href="#">Vehicle Registration Service</a></li>
+            </ul>
+            <h4>DOWNLOAD BUTL APP</h4>
+            <div class="app-links">
+                <img src="img/Google_Play.svg" alt="Google Play">
+                <img src="img/App_Store.svg" alt="App Store">
+            </div>
+            <div class="social-icons">
+                <a href="#"><img src="img/fb.webp" alt="Facebook"></a>
+                <a href="#"><img src="img/intergram.webp" alt="Instagram"></a>
+                <a href="#"><img src="img/tiktok.webp" alt="TikTok"></a>
+                <a href="#"><img src="img/youtube.webp" alt="YouTube"></a>
+            </div>
+        </div>
+    </div>
+</footer>
+<script>
+document.getElementById("dropdownToggle").addEventListener("click", function(e) {
+    e.preventDefault();
+    document.getElementById("dropdownMenu").classList.toggle("show");
+});
+
+// Click ra ngoài thì đóng menu
+document.addEventListener("click", function(e) {
+    const menu = document.getElementById("dropdownMenu");
+    const toggle = document.getElementById("dropdownToggle");
+    if (!toggle.contains(e.target) && !menu.contains(e.target)) {
+        menu.classList.remove("show");
+    }
+});
+</script>
+
+<script>
+document.addEventListener("DOMContentLoaded", function() {
+    document.querySelectorAll(".dropdown-toggle").forEach(toggle => {
+        toggle.addEventListener("click", function(e) {
+            e.preventDefault();
+
+            // Đóng tất cả menu khác
+            document.querySelectorAll(".dropdown-menu").forEach(menu => {
+                if (menu !== this.nextElementSibling) {
+                    menu.classList.remove("show");
+                }
+            });
+
+            // Toggle menu hiện tại
+            this.nextElementSibling.classList.toggle("show");
+        });
+    });
+
+    // Đóng menu khi click ra ngoài
+    document.addEventListener("click", function(e) {
+        document.querySelectorAll(".dropdown").forEach(drop => {
+            if (!drop.contains(e.target)) {
+                drop.querySelector(".dropdown-menu").classList.remove("show");
+            }
+        });
+    });
+});
+</script>
+
+</body>
+</html>x

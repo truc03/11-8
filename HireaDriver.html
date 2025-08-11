@@ -1,0 +1,588 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="style3.css">
+    <title>Document</title>
+</head>
+<style>
+
+/* Booking section */
+.booking-section {
+    padding: 50px 10%;
+}
+
+.booking-container {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+}
+
+.phone-image img {
+    max-width: 250px;
+}
+
+.booking-steps h2 {
+    font-size: 24px;
+}
+
+.booking-steps span {
+    color: #ff6600;
+}
+
+.step {
+    display: flex;
+    align-items: center;
+    margin: 10px 0;
+}
+
+.step-number {
+    background: #ff6600;
+    color: #fff;
+    width: 25px;
+    height: 25px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+.btn {
+    background: #ff6600;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    margin-top: 20px;
+    border-radius: 5px;
+}
+
+/* Commitment section */
+.commitment-section {
+    padding: 50px 10%;
+}
+
+.commitment-container {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+}
+
+.commitment-text h2 span {
+    color: #ff6600;
+}
+
+.commitment-images {
+    display: flex;
+    gap: 15px;
+}
+
+.commitment-images img {
+    max-width: 350px;
+    border-radius: 10px;
+}
+.become-driver {
+  padding: 50px 0;
+  background: linear-gradient(to right, #fff8f2, #ffeade);
+}
+
+.become-driver .container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 40px;
+}
+
+.become-driver .left {
+  flex: 1;
+  text-align: center;
+}
+
+.become-driver .driver-img {
+  max-width: 100%;
+  height: auto;
+}
+
+.become-driver .right {
+  flex: 1;
+}
+
+.become-driver h2 {
+  font-size: 36px;
+  margin-bottom: 20px;
+  font-weight: 700;
+}
+
+.become-driver h2 span {
+  color: #f37021;
+}
+
+.become-driver p {
+  font-size: 16px;
+  line-height: 1.6;
+  color: #555;
+}
+
+.buttons {
+  margin-top: 20px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.btn-orange {
+  background-color: #f37021;
+  color: #fff;
+  padding: 10px 20px;
+  border-radius: 6px;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.contact {
+  color: #f37021;
+  text-decoration: none;
+  font-size: 16px;
+}
+
+.social {
+  margin-top: 20px;
+  display: flex;
+  gap: 15px;
+}
+
+.social img {
+  width: 40px;
+  height: 40px;
+}
+.label {
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: #fff;
+  padding: 8px 15px;
+  border-radius: 50px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+}
+
+.label img {
+  width: 30px;
+  height: 30px;
+}
+
+.label span {
+  font-size: 14px;
+  font-weight: bold;
+  color: #f37021;
+}
+
+.special-section {
+  text-align: center;
+  padding: 50px 20px;
+  background: linear-gradient(to bottom right, #fff7f3, #ffe9d9);
+}
+
+.special-section h2 {
+  font-size: 18px;
+  font-weight: 500;
+  margin-bottom: 30px;
+}
+
+.special-section h2 span {
+  color: #f37021;
+  font-weight: bold;
+}
+
+.special-cards {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+
+.card {
+  background: #fff;
+  border-radius: 10px;
+  padding: 20px;
+  width: 280px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+  text-align: left;
+}
+
+.icon {
+  background: #fff3eb;
+  width: 50px;
+  height: 50px;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 15px;
+}
+
+.icon img {
+  width: 24px;
+  height: 24px;
+}
+
+.card h3 {
+  color: #f37021;
+  font-size: 16px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.card p {
+  font-size: 14px;
+  color: #555;
+  line-height: 1.5;
+}
+.driver-categories {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 0;
+}
+
+.driver-categories .category {
+  position: relative;
+  flex: 1;
+  min-width: 300px;
+  text-decoration: none;
+  color: inherit;
+  overflow: hidden;
+}
+
+.driver-categories .category img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  transition: transform 0.4s ease;
+}
+
+.driver-categories .category:hover img {
+  transform: scale(1.05);
+}
+
+.driver-categories .overlay {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.driver-categories .icon {
+  background: white;
+  border-radius: 50%;
+  padding: 15px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 10px;
+}
+
+.driver-categories .icon img {
+  width: 50px;
+  height: 50px;
+}
+
+.driver-categories span {
+  display: inline-block;
+  background: white;
+  padding: 5px 15px;
+  border-radius: 5px;
+  font-weight: bold;
+  color: #f37021;
+  font-size: 16px;
+}
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-menu {
+    display: none;
+    position: absolute;
+    background: #fff4ec;
+    min-width: 200px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    padding: 10px 0;
+    top: 100%;
+    left: 0;
+    z-index: 10;
+}
+
+.dropdown-menu a {
+    display: block;
+    padding: 8px 20px;
+    color: #333;
+    font-size: 15px;
+    text-decoration: none;
+}
+
+.dropdown-menu a:hover {
+    background-color: #f8f8f8;
+}
+
+.show {
+    display: block !important;
+}
+
+</style>
+<body>
+    <header>
+        <img src="img/Isolation_Mode.png" alt="BUTL Logo">
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="about.html">About BUTL</a>
+            <a href="YouDrinkIdrive.html">You Drink I Drive</a>
+                 <div class="dropdown">
+            <a href="HireaDriver.html" id="dropdownToggle">Hire a driver ▼</a>
+            <div class="dropdown-menu" id="dropdownMenu">
+                <a href="motobike drive.html">Motorbike driver</a>
+                <a href="car driver.html">Car driver</a>
+                <a href="driver-to-province.html">Driver to province</a>
+            </div>
+        </div>
+               <div class="dropdown">
+            <a href="Services.html" class="dropdown-toggle">Affiliate Services ▼</a>
+            <div class="dropdown-menu">
+                <a href="Registration for household.html">Registration for household</a>
+                <a href="Parking lot link.html">Parking lot link</a>
+                <a href="Motorcycle Rescue.html">24/7 Motorcycle Rescue</a>
+                <a href="Car Rescue.html">24/7 Car Rescue</a>
+            </div>
+        </div>
+            <a href="Contact.html">Contact</a>
+        </nav>
+        <a class="btn-download" href="#">DOWNLOAD THE APP NOW</a>
+    </header>
+    
+<section class="driver-categories">
+  <a href="motobike drive.html" class="category">
+    <img src="img/moto.png" alt="Motorbike Driver">
+    <div class="overlay">
+      <div class="icon">
+        <img src="img/Frame-1197134596.png" alt="Motorbike">
+      </div>
+    <br>  <span>Motorbike driver</span>
+    </div>
+  </a>
+
+  <a href="car driver.html" class="category">
+    <img src="img/car.webp" alt="Car Driver">
+    <div class="overlay">
+      <div class="icon">
+        <img src="img/Frame-1197134595.png" alt="Car">
+      </div>
+    <br>  <span>Car driver</span>
+    </div>
+  </a>
+
+  <a href="driver-to-province.html" class="category">
+    <img src="img/driver.webp" alt="Driver to province">
+    <div class="overlay">
+      <div class="icon">
+        <img src="img/Frame-1197134597.png" alt="Province Driver">
+      </div>
+    <br>  <span>Driver to province</span>
+    </div>
+  </a>
+</section>
+
+<section class="special-section">
+  <h2>
+    What is special about <span>BUTL 's Driver Rental</span> Service ?
+  </h2>
+  
+  <div class="special-cards">
+    <div class="card">
+      <div class="icon">
+        <img src="img/Frame-1197134603.png" alt="Safe">
+      </div>
+      <h3>Absolutely safe</h3>
+      <p>
+        All BUTL drivers undergo a thorough training process, behave professionally, 
+        have safe driving skills and experience. BUTL always ensures compliance with traffic regulations 
+        and brings absolute peace of mind to passengers.
+      </p>
+    </div>
+
+    <div class="card">
+      <div class="icon">
+        <img src="img/Frame-1197134600.png" alt="Fast">
+      </div>
+      <h3>Convenient and fast</h3>
+      <p>
+        Booking a driver is just a few taps away on the app. Whether you need a driver urgently or have 
+        a scheduled appointment, BUTL has drivers available to serve you promptly.
+      </p>
+    </div>
+
+    <div class="card">
+      <div class="icon">
+        <img src="img/Frame-1197134614.png" alt="Service">
+      </div>
+      <h3>Professional Service</h3>
+      <p>
+        BUTL drivers are not only drivers but also reliable companions throughout your journey. 
+        With attentive and polite service attitude, drivers ensure to always bring comfortable 
+        and friendly experiences to customers.
+      </p>
+    </div>
+  </div>
+</section>
+
+<section class="booking-section">
+        <div class="booking-container">
+            <div class="phone-image">
+                <img src="img/TUTORIAL-MB-2.gif" alt="BUTL App">
+            </div>
+            <div class="booking-steps">
+                <h2>Book a <span>BUTL</span> driver by:</h2>
+                <div class="step"><span class="step-number">1</span> <strong>Step 1:</strong> Enter Pickup Point/Destination</div>
+                <div class="step"><span class="step-number">2</span> <strong>Step 2:</strong> Select service <a href="#">Car Driver/Motorbike Driver/Provincial Driver</a></div>
+                <div class="step"><span class="step-number">3</span> <strong>Step 3:</strong> Select payment method</div>
+                <div class="step"><span class="step-number">4</span> <strong>Step 4:</strong> Enter promo code (if any)</div>
+                <div class="step"><span class="step-number">5</span> <strong>Step 5:</strong> Select <a href="#">Book a ride</a> and let BUTL find the nearest driver for you</div>
+                <button class="btn">Book a driver now</button>
+            </div>
+        </div>
+    </section>
+
+    <section class="commitment-section">
+        <div class="commitment-container">
+            <div class="commitment-text">
+                <h2>Commitment to <span>service quality</span></h2>
+                <p>Community mission: With the motto “Your Safety Is Our Happiness”, BUTL has purchased a professional liability insurance package specifically for BUTL’s services.</p>
+                <p>Driver team: With a team of experienced drivers who are carefully selected and trained, BUTL always wants vehicle owners to be comfortable, safe and relaxed on every trip.</p>
+                <p>No worries about price: The price of the trip is displayed right on the BUTL app (including promotional/discount prices). Just pay the exact amount and enjoy the trip.</p>
+            </div>
+            <div class="commitment-images">
+                <img src="img/1.png" alt="Driver 1">
+               
+            </div>
+        </div>
+    </section>
+<section class="become-driver">
+  <div class="container">
+    <div class="left">
+      <img src="img/THU-NHAO-CAO.png" alt="BUTL Driver" class="driver-img">
+    </div>
+    <div class="right">
+      <h2>Become a <span>BUTL</span> driver</h2>
+      <p>
+        BUTL always welcomes drivers to join the professional driver community,
+        pioneering in providing safe, reputable and convenient services to customers.
+        Join BUTL to spread the spirit of safe traffic participation and enjoy attractive benefits!
+      </p>
+      <div class="buttons">
+        <a href="#" class="btn-orange">Sign up now</a>
+        <span>Or</span>
+        <a href="tel:19009235" class="contact">Contact: <strong>1900 9235</strong></a>
+      </div>
+    </div>
+  </div>
+</section>
+    <!-- Footer -->
+<footer class="footer">
+    <div class="footer-container">
+        <div class="footer-about">
+            <img src="img/Isolation_Mode(1).png" alt="BUTL Logo" class="footer-logo">
+            <p><strong>YOU DRINK, I DRIVE SERVICE JOINT STOCK COMPANY</strong></p>
+            <p>Address: No. 24 DN7 Street, Tan Hung Thuan Ward, District 12, HCMC</p>
+            <p>Tax code: 0314377271</p>
+            <p>Hotline: 1900 9235 - 0908 08 4499</p>
+            <p>Email: info@banuongtoilai.vn</p>
+        </div>
+
+        <div class="footer-links">
+            <h4>ABOUT BUTL</h4>
+            <ul>
+                <li><a href="#">Introduce</a></li>
+                <li><a href="#">Registration Instructions</a></li>
+                <li><a href="#">Terms of Service</a></li>
+                <li><a href="#">Privacy Policy</a></li>
+                <li><a href="#">Recruitment of Driver Partners</a></li>
+            </ul>
+        </div>
+
+        <div class="footer-services">
+            <h4>BUTL SERVICES</h4>
+            <ul>
+                <li><a href="#">You Drink I Drive</a></li>
+                <li><a href="#">Rent a Car Driver</a></li>
+                <li><a href="#">Rent a Motorbike Driver</a></li>
+                <li><a href="#">Vehicle Registration Service</a></li>
+            </ul>
+            <h4>DOWNLOAD BUTL APP</h4>
+            <div class="app-links">
+                <img src="img/Google_Play.svg" alt="Google Play">
+                <img src="img/App_Store.svg" alt="App Store">
+            </div>
+            <div class="social-icons">
+                <a href="#"><img src="img/fb.webp" alt="Facebook"></a>
+                <a href="#"><img src="img/intergram.webp" alt="Instagram"></a>
+                <a href="#"><img src="img/tiktok.webp" alt="TikTok"></a>
+                <a href="#"><img src="img/youtube.webp" alt="YouTube"></a>
+            </div>
+        </div>
+    </div>
+</footer>
+<script>
+document.getElementById("dropdownToggle").addEventListener("click", function(e) {
+    e.preventDefault();
+    document.getElementById("dropdownMenu").classList.toggle("show");
+});
+
+// Click ra ngoài thì đóng menu
+document.addEventListener("click", function(e) {
+    const menu = document.getElementById("dropdownMenu");
+    const toggle = document.getElementById("dropdownToggle");
+    if (!toggle.contains(e.target) && !menu.contains(e.target)) {
+        menu.classList.remove("show");
+    }
+});
+</script>
+
+<script>
+document.addEventListener("DOMContentLoaded", function() {
+    document.querySelectorAll(".dropdown-toggle").forEach(toggle => {
+        toggle.addEventListener("click", function(e) {
+            e.preventDefault();
+
+            // Đóng tất cả menu khác
+            document.querySelectorAll(".dropdown-menu").forEach(menu => {
+                if (menu !== this.nextElementSibling) {
+                    menu.classList.remove("show");
+                }
+            });
+
+            // Toggle menu hiện tại
+            this.nextElementSibling.classList.toggle("show");
+        });
+    });
+
+    // Đóng menu khi click ra ngoài
+    document.addEventListener("click", function(e) {
+        document.querySelectorAll(".dropdown").forEach(drop => {
+            if (!drop.contains(e.target)) {
+                drop.querySelector(".dropdown-menu").classList.remove("show");
+            }
+        });
+    });
+});
+</script>
+
+</body>
+</html>
